@@ -18,7 +18,11 @@
 
  	$( "a" ).removeClass( "test" );
 
- 	$.get( "myhtmlpage.html", myCallBack );
+ 	$.get( "myhtmlpage.html", function() {
+ 
+    myCallBack( param1, param2 );
+ 
+	});
 
  	$( "a" ).click(function( event ) {
  
