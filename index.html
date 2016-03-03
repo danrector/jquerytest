@@ -18,6 +18,14 @@
 
  	$( "a" ).removeClass( "test" );
 
+ 	$( "a" ).click(function( event ) {
+ 
+    event.preventDefault();
+ 
+    $( this ).hide( "slow" );
+ 
+	});
+
     $( document ).ready(function() {
  
     $( "a" ).click(function( event ) {
